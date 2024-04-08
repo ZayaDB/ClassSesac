@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .Stripes > *:nth-child(2n) {
+        background-color: yellow;
+      }
+      .Stripes > *:nth-child(2n-1) {
+        background-color: blue;
+      }
+      .box::before {
+        content: "택시";
+      }
+      .box::after {
+        content: "빨리";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Stripes">
+      <div>navy</div>
+      <div>yellow</div>
+      <div>navy</div>
+      <div>yellow</div>
+      <div>navy</div>
+      <div>yellow</div>
+      <div>navy</div>
+      <div>yellow</div>
+      <div>navy</div>
+      <div>yellow</div>
+    </div>
+    <hr />
+    <div class="box">여기요!</div>
+    만들기
+  </body>
+</html>

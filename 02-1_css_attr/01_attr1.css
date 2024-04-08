@@ -1,0 +1,145 @@
+.px {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+.em-text {
+  font-size: 2em;
+}
+.vh {
+  width: 30vh;
+  height: 30vh;
+  background-color: chocolate;
+}
+
+.vw {
+  width: 30vw;
+  height: 30vw;
+  background-color: thistle;
+}
+
+.d-inline {
+  background-color: aquamarine;
+  border: 1px solid darkblue;
+  height: 100px;
+  width: 100px;
+}
+
+.d-block {
+  background-color: antiquewhite;
+  border: 1px solid yellow;
+  height: 100px;
+}
+
+.d-inline-block {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border: 1px solid salmon;
+  font-size: 30px;
+}
+.orange {
+  background-color: orange;
+  width: auto;
+  height: 200px;
+}
+.orange * {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+}
+
+.blue {
+  background-color: skyblue;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+/* max wi*/
+
+.parent {
+  width: 500px;
+  height: 200px;
+  background-color: pink;
+}
+.min {
+  min-width: 400px;
+  height: 100px;
+  background-color: purple;
+}
+.max {
+  max-width: 400px;
+  height: 100px;
+  background-color: orange;
+}
+
+.header {
+  height: 130px;
+  background-color: aqua;
+}
+.calc {
+  width: calc(100vw-300px);
+  height: calc(100vh-130px);
+  background-color: yellow;
+}
+
+.border {
+  border: 3px solid;
+  border-width: 1px;
+  border-style: groove;
+  border-color: red orange yellow green;
+  border-right: 5px solid purple;
+  border-radius: 10px;
+  border-bottom: 5px solid gray;
+}
+
+/*box-sizing*/
+.box-sizing {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border: 15px solid red;
+  background-color: orange;
+}
+.content-box {
+  box-sizing: content-box;
+}
+.border-box {
+  box-sizing: border-box;
+}
+.google {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+@font-face {
+  font-family: "seolleimcool-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-face {
+  font-family: "seolleimcool-SemiBold", sans-serif;
+}
+.sentence {
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: justify;
+  text-decoration: underline;
+  line-height: 1;
+  line-height: 100%;
+}
+.text-container {
+  width: 70vw;
+  height: 300px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

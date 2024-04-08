@@ -1,0 +1,34 @@
+img {
+  width: 300px;
+  height: 200px;
+}
+.container {
+  width: 100vw;
+  height: 500px;
+  background-color: lightblue;
+  position: relative;
+}
+.beach {
+  position: absolute;
+  transform: skewY(30deg);
+  transition: 1s;
+}
+.beach:hover {
+  transform: skew(0);
+}
+
+.beach1 {
+  top: 180px;
+  left: 200px;
+  z-index: 3;
+}
+.beach2 {
+  top: 150px;
+  left: 350px;
+  z-index: 2;
+}
+.beach3 {
+  top: 120px;
+  left: 500px;
+  z-index: 1;
+}

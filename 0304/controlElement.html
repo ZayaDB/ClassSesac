@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./controlElement.js"></script>
+    <style>
+      img {
+        width: 150px;
+      }
+      .changeStyle {
+        background-color: greenyellow;
+        color: blue;
+      }
+      .prepend {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!--before,after-->
+    <h1 id="h1">DOM 요소 다루기</h1>
+    <!--inner text, inter hmtl-->
+    <h2>JS 요소 다루기</h2>
+    <div id="div1">이것은 <strong>첫번째 </strong> div 태그입니다.</div>
+    <!--요소 속성 가져오기 수정하기-->
+
+    <a href="http://www.naver.com" id="naver">naver</a>
+    <img src="./repeat_ex.png" alt="아무사진" id="img1" />
+    <!--요소 스타일링, for of 문으로 순회, classlist ,부모 형제 요소 접근-->
+
+    <ul id="flower">
+      <li class="pink">벚꽃</li>
+      <li>장미</li>
+      <li>개나리</li>
+      <li>진달래</li>
+    </ul>
+    <!-- 요소 생성, 추가, 삭제 -->
+    <div class="container"></div>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mediaquery</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .media {
+        background-color: pink;
+      }
+      .header-mobile {
+        display: none;
+      }
+      .img-container {
+        width: 100vh;
+        display: flex;
+        justify-content: space-around;
+      }
+      .img-container img {
+        width: 20vw;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: skyblue;
+        margin: 20px;
+      }
+      @media screen and (min-width: 700px) {
+        .container {
+          flex-direction: row;
+        }
+        .box {
+          background-color: black;
+        }
+      }
+      @media screen and (max-width: 720px) {
+        .header-mobile {
+          display: block;
+        }
+        .header-normal {
+          display: none;
+        }
+        .img-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .img-container img {
+          width: 80vw;
+        }
+      }
+      /*screen이 너비가 최대 800px일때 적용-> 800px 보다 좀을 때 적용 됨*/
+      @media screen and (max-width: 800px) {
+        .media {
+          background-color: gold;
+        }
+      }
+      /*screen이 너비가 최소 1200px일때 적용-> 1200px 보다 넓을 때 적용 됨*/
+      @media screen and (min-width: 1200px) {
+        .media {
+          background-color: skyblue;
+        }
+      }
+      @media screen and (min-width: 500px) {
+        body {
+          background-color: skyblue;
+        }
+      }
+      @media screen and (max-width: 300px) {
+        body {
+          background-color: orange;
+        }
+      }
+      @media screen and (max-height: 500px) {
+        p {
+          font-family: "Courier New", Courier, monospace;
+        }
+      }
+      @media screen and (min-height: 500px) {
+        p {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="media">mediaquery</div>
+    <hr />
+    <header class="header-normal">웹, 태블릿 헤더</header>
+    <header class="header-mobile">모바일 헤더</header>
+    <hr />
+    <section class="img-container">
+      <img src="./latte.jpg" alt="latte" />
+      <img src="./latte.jpg" alt="latte" />
+      <img src="./latte.jpg" alt="latte" />
+      <img src="./latte.jpg" alt="latte" />
+    </section>
+    <hr />
+    <h2>실습</h2>
+    <p>미디어 쿼리 실습</p>
+    <hr />
+    <h2>크기에 따라 자리 바꾸기</h2>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

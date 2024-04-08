@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM - 요소 선택</title>
+    <!--
+        defer 속송
+        -   브라우전는 script 태그를 만나면 스크립트를 로딩하고 실행하기 위해 html 문서 파싱을 준단함
+        
+    -->
+    <script defer src="./js_DOM.js"></script>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 100px;
+      }
+      .pink {
+        background-color: pink;
+      }
+      #green {
+        background-color: green;
+      }
+      #gold {
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pink">1</div>
+    <div class="pink">2</div>
+    <div class="pink">3</div>
+    <div class="pink">4</div>
+    <div id="green" class="others"></div>
+    <div id="gold" class="others">금색</div>
+  </body>
+</html>

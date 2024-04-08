@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100000px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: 0;
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+      .product-info {
+        height: 50vh;
+        background-color: aliceblue;
+      }
+      .product-info-detail {
+        height: 600px;
+        background-color: antiquewhite;
+      }
+      .fixed-tab {
+        position: sticky;
+        top: 0;
+        background-color: pink;
+      }
+      .fixed-tab li {
+        height: 100%;
+        margin: 0;
+        text-align: center;
+        list-style-type: none;
+      }
+      .fixed-tab a {
+        display: block;
+        padding: 10px 0;
+      }
+      .top-btn {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: pink;
+        text-align: center;
+        line-height: 50px;
+      }
+      .fixed-tab ul {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="product-info">section 1</section>
+      <section class="product-info-detail">
+        <div class="fixed-tab">
+          <ul>
+            <li><a href="#">상품정보 </a></li>
+            <li><a href="#"> 혜택/구매정보</a></li>
+            <li><a href="#">고객리뷰/Q&A </a></li>
+            <li><a href="#"> 추천 상품</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <a href="#" class="top-btn">위로</a>
+  </body>
+</html>

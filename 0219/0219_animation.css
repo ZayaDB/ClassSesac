@@ -1,0 +1,128 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  position: relative;
+
+  /*animation 사용*/
+  animation-name: my-ani;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+}
+
+@keyframes my-ani {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 200px;
+  }
+  50% {
+    left: 400px;
+  }
+  75% {
+    left: 200px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.bounce-ball1 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  left: 100px;
+  top: 0;
+  border-radius: 50%;
+  background-color: lightblue;
+  /*animation-name: bounce1;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;*/
+  animation: alternate;
+  /*단축 프로피티(입력 순서)
+    ㅁanimation: name duration timing-fuckltuin, delay iteration-count direction fill 
+    
+  */
+  animation: bounce1 1s ease-in infinite alternate;
+}
+@keyframes bounce1 {
+  to {
+    top: 0px;
+  }
+  from {
+    top: 300px;
+  }
+}
+.bounce-ball2 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+
+  animation-name: bounce2;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+
+  animation: bounce2 1s ease-in infinite forwards;
+}
+@keyframes bounce-ball2 {
+  from,
+  to {
+    bottom: 0;
+
+    animation-timing-function: ease-out;
+    /*0px에서 장상 속도로로 시작해, 천처뇌 속도를 줄아 300px 됨*/
+    width: 60px;
+  }
+  50% {
+    width: 100px;
+    bottom: 300px;
+    animation-timing-function: ease-in;
+  }
+}
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, yellow, orange 70%, orangered);
+  box-shadow: -5px 5px 10px inset rgb(49, 49, 49, 0.5);
+  animation: ball 10s linear infinite;
+}
+
+@keyframes ball {
+  0% {
+    transform: translate(0px);
+  }
+  25% {
+    transform: translate(calc(100vw - 100px), 0px);
+  }
+  50% {
+    transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+  }
+  75% {
+    transform: translate(0, calc(100vh - 100px));
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+p {
+  animation: slidein 3s infinite;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+h2 {
+  margin-top: calc(100vh - 100px);
+}

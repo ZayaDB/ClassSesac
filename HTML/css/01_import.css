@@ -1,0 +1,21 @@
+li {
+  background-color: cornflowerblue;
+}
+
+body {
+  margin: 10%;
+  padding: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  background-color: orange;
+  color: blue;
+}
+
+/*
+    import 방식은 css 파일에서 다른 css 파일을 
+*/

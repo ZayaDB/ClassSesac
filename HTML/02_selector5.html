@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>속성 선택자</title>
+    <style>
+      /*속성만 작성하는 경우 해당 속성과 석성값을 요소를 선택*/
+      /*속성만 작성하는 경우 해당 속성과 석성값을 요소를 선택*/
+      [disabled] {
+        background-color: red;
+      }
+      [placeholder="이름"] {
+        background-color: orange;
+      }
+      [value] {
+        background-color: blue;
+      }
+      button {
+        color: red;
+        position: absolute;
+        top: 290px;
+        left: 350px;
+      }
+      form {
+        width: 400px;
+        background-color: white;
+        border: 1px solid snow;
+      }
+      h3:hover {
+        background-color: blueviolet;
+        color: aqua;
+      }
+      textarea {
+        width: 100%;
+      }
+      [type="checkbox"]:active {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" placeholder="이름" />
+      <input type="password" value="pw" />
+      <input type="text" value="000-0000-0000" />
+      <br />
+      <input type="text" placeholder="핸드폰" />
+      <input type="text" placeholder="주민번호" disabled />
+
+      <h3>간의 사항을 적어주세요</h3>
+      <label for="textarea"></label>
+      <textarea id="textarea" cols="50" rows="10" placeholder="건의 사항">
+      </textarea>
+      <br />
+      <input type="checkbox" name="radio" id="1" />
+      <label for="1">빨강</label>
+      <input type="checkbox" name="radio" id="2" />
+      <label for="2" style="background-color: blue">파랑</label>
+      <input type="checkbox" name="radio" id="3" />
+      <label for="3" style="background-color: yellow">노랑</label>
+      <br />
+      <button type="submit" style="margin: 20px">제출</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Tag</title>
+  </head>
+  <body>
+    <table
+      border="1"
+      width="100px"
+      height="70px"
+      align="center"
+      bgcolor="pink"
+      bordercolor="red"
+    >
+      <tr align="center">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr align="center">
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+    </table>
+
+    <h1>메뉴판</h1>
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>메뉴</th>
+        <th>가격</th>
+        <th>비고</th>
+      </tr>
+      <tr>
+        <th>돈까스</th>
+        <th>9000원</th>
+        <th>맛있어여</th>
+      </tr>
+      <tr>
+        <th colspan="1">볶음밥</th>
+      </tr>
+      <br />
+    </table>
+
+    <h1>메뉴판</h1>
+
+    <table border="1" cellspacing="0" cellpadding="10">
+      <tr>
+        <th>메뉴</th>
+        <th>가격</th>
+        <th>비고</th>
+        <th>짜잔</th>
+      </tr>
+      <tr>
+        <td>돈까스</td>
+        <td>9000원</td>
+        <td>맛있어여</td>
+        <td rowspan="1">짜자잔</td>
+      </tr>
+    </table>
+    <br />
+
+    <table border="1">
+      <tr>
+        <td colspan="2">1</td>
+
+        <td rowspan="2">2</td>
+      </tr>
+      <tr>
+        <td rowspan="2">3</td>
+        <td>center</td>
+      </tr>
+      <tr>
+        <td colspan="2">4</td>
+      </tr>
+    </table>
+    <div style="margin: 100px">
+      <h2 style="color: greenyellow" style="margin-top: auto">
+        스타박스 (실습)
+      </h2>
+      <table border="1" cellspacing="0">
+        <tr>
+          <th>구분</th>
+          <th>음료</th>
+          <th>가격</th>
+          <th>이미지</th>
+        </tr>
+        <tr>
+          <td rowspan="2">카피류</td>
+          <td>아메리카노</td>
+          <td>4200원</td>
+          <td>
+            <a
+              href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=110563"
+            >
+              <img src="img/americano.jpg" width="250" height="250" />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>둘체라떼</td>
+          <td>4800원</td>
+          <td>
+            <a
+              href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=41"
+            >
+              <img src="latte.jpg" width="250" height="250" />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">주스류</td>
+          <td>자바칩 프라푸치노</td>
+          <td rowspan="2">5000원</td>
+          <td>
+            <a
+              href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=168066"
+            >
+              <img src="capuchino.jpg" width="250" height="250" />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>녹차 프라푸치노 사진</td>
+          <td>
+            <a
+              href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=400400000091"
+            >
+              <img src="green tea.jpg" width="250" height="250" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

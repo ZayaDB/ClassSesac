@@ -1,0 +1,189 @@
+.box {
+  display: inline-block;
+  width: 400px;
+  height: 500px;
+  border: 2px solid black;
+}
+/*배경색 관련 속성*/
+.background {
+  /* background color은 background만 작성해도 스타일 지정할 수 잇음
+    background-단축속성
+    단축속성 순서
+    color/ image /repeat /position/ size
+    */
+  background-color: aqua;
+  background: palevioletred;
+  /*graduation default top to bottom*/
+  background: linear-gradient(to left, gold 20%, yellowgreen, green);
+  /*색상 앞에 to bottom, to top,to right, to left deg 입력 시 해당 방향으로
+  색상 뒤 한 콜론 후 % 입력 시 해당 삭상의 차지 비율 지정*/
+}
+/*img 관련 속성*/
+.background-image {
+  background-image: url("./small_img\ \(1\).png");
+  /*1. background repeat
+  default-repeat
+  2. 반복 -x - no-repeat
+  3.x 축, Y 축*
+  4. background position  -  center,bottom,left,right,top,단위/
+  5.background size 
+  6.background contain-배경 사이즈의 작은 축에 맞춰 이미지 크기 지정 
+  7. background cover -배경 사이즈의 긴 축에 맞춰 이미지 크기 지정 이럴때 잘리게 됨*/
+  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  /*2 방향 가능 x 축 y 축*/
+  background-position: center top;
+  /*default-auto*/
+  /*2 size 가능 가로 새로로*/
+  background-size: 100px;
+  background-size: contain;
+  background-size: cover;
+  overflow: scroll;
+
+  /*background-attachment
+  default-scroll*/
+
+  background-attachment: scroll;
+  /*background-attachment:fixed 일 때 기준은 viewport*/
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100px;
+}
+.sky1 {
+  background-color: skyblue;
+  background-image: url("./1.png");
+  background-repeat: repeat-x;
+  background-position: center;
+}
+.sky2 {
+  background-color: skyblue;
+  background-image: url("./1.png");
+  background-size: contain;
+  background-position-x: 100px;
+  background-position-y: 30px;
+  background-repeat: no-repeat;
+}
+.sky3 {
+  background-color: skyblue;
+  background-image: url("./1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+.search:focus {
+  background-color: aliceblue;
+  background-image: url("./search-icon.png");
+  background-size: 20px;
+  width: 200px;
+  height: 10px;
+  padding: 8px 10px 8px 40px;
+  background-position: 10px center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: rgb(224, 224, 224);
+  background-repeat: no-repeat;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 2000px;
+}
+div {
+  width: 100px;
+  height: 100px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 100px;
+}
+/*position static - default
+기분 값이기 때문에 작성하지 않아도 됨
+-inline 오소라면 왼쪽에서 오른쪽으로 쌓임
+-block 요소라면 위에서 아래로 쌓임
+ top bottom right left 가능
+*/
+.position-static {
+  background-color: pink;
+  position: static;
+  top: 100px;
+}
+/*positin relative는 상대 위치
+일반적인 흐름에 따라 배치하되, top bottom left right 속성을 사용해 위치 지정
+자신의 원래 있어야 하는 위치 기준
+top- 위서 여백
+bottom- 아래서 여백
+right- 오른쪽으로부터의 여백
+left- 윈쪽으로부터의 여백
+자기의 자리를 벗어나도 원래 자리가 비어있음
+*/
+.position-relative {
+  background-color: lightblue;
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+/* position-absolute는 전대 위치
+- 기준점은 
+    - position static이 아닌 값을 가지는 제일 가까운 조상 기준
+    -만약 position static 이 아닌 갓을 가진 조상이 없다면  viewport 기준
+    -특정 오소를 기준 삼아 top,bottom,left,right 속성을 지정함
+    문서 흐름을 벗어남
+ */
+.position-absolute {
+  background-color: gold;
+  position: absolute;
+  top: 0;
+}
+/*position-fixed은 고정 위치 
+    -viewport 기준으로 특정 위치에 배치
+    -스코롤 되어도 움직이지 않음 - header top bottom 제작 시 많이 사용
+    -top bottom left right 속성 중 하나 이상을 지정
+ */
+.position-fixed {
+  background-color: palevioletred;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+/* position-sticky은 top 속성의 위치에 도달했을 때 */
+.position-sticky {
+  background-color: coral;
+  position: sticky;
+  top: 0; /* 뷰포트의 최상단에 도달했을 때 고정*/
+}
+.sticky-container {
+  height: 1200px;
+  width: 100vw;
+  background: linear-gradient(lightblue lightpink);
+}
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  position: relative;
+}
+.item1 {
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+  position: relative;
+  left: 50px;
+  top: 30px;
+}
+
+.item2 {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  right: 30px;
+  bottom: 100px;
+  position: absolute;
+}
+.item3 {
+  width: 100px;
+  height: 100px;
+  background-color: beige;
+  right: 100px;
+  top: 100px;
+  position: fixed;
+}

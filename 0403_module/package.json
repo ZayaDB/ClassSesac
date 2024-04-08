@@ -1,0 +1,5 @@
+{
+  "type": "module",
+  "comment": "commonjs 모듈 사용할 때는 type: commonjs 사용",
+  "comment2": "es6 모듈 사용할 때는 type: module 사용"
+}

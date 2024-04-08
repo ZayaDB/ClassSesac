@@ -1,0 +1,40 @@
+/*transition -> www.matthewlein.com/tools/ceaser (예시 사이트)
+    -변화가 일어날 때 사용하는 속성
+    -프로퍼티 값 변경 시, 일정 시간에 걸쳐 변화가 일어나도록 함
+       -transition-property-변화 대상 css 속성 지정 (default: all)
+       -transition-duration- 변화가 일어날 시간(단위: s(초))
+       -transition-timing-function(): 변화 시간별 속도 지정 (default:ease)
+            -ease-천천히 시작해서 빨라지고 느려짐
+            -linear-속도 일정
+            -ease-in - 천천히 시작-> 정상 속도
+            -ease-out: 정상 속도-> 천천히 끝남
+            -ease-in-out: 천천히 시작-> 정상 속도- 느려짐
+       -transition-delay: 지연 시간(단워:s(초))    
+            */
+.box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: black;
+}
+.box1:hover {
+  background-color: pink;
+  height: 120px;
+  width: 120px;
+  transition-property: scale;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  transition-delay: 1s;
+
+  /*단축 속성
+    순서 매우 중요
+    transition: property duration timing-function delay;
+  */
+  transition: scale 1s ease-in 1s;
+}
+
+.box2:hover {
+  background-color: aqua;
+  transform: translateX(200px);
+  transform: scaleX(2);
+}

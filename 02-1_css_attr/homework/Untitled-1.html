@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h3:hover {
+        background-color: aquamarine;
+      }
+      textarea:focus {
+        background-color: #f96666;
+      }
+      #text1:focus {
+        background-color: red;
+        color: red;
+      }
+      #text1:hover {
+        color: red;
+      }
+      button:active {
+        background-color: rebeccapurple;
+        color: white;
+      }
+      form {
+        width: 400px;
+      }
+      /* hover */
+
+      /* focus */
+      textarea {
+        width: 100%;
+      }
+      /* checked */
+
+      /* active */
+      button {
+        float: right;
+        padding: 5px 15px;
+        background-color: #f96666;
+        color: white;
+        font-size: 17px;
+        border-radius: 10px;
+        border: none;
+      }
+      p.dotted {
+        border-style: dotted;
+        border-radius: 10px;
+      }
+      p.dotted1 {
+        border-style: dotted;
+        border-right-color: aqua;
+        border-left-color: blue;
+        border-top-color: yellow;
+        border-bottom-color: green;
+        border-radius: 10px;
+      }
+      p.solid {
+        border-style: solid;
+        border-radius: 10px;
+      }
+      p.inset {
+        border-style: inset;
+        border-radius: 10px;
+      }
+      #Sesac {
+        padding: 20px;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        margin-top: 120px;
+        margin-left: 120px;
+      }
+      #hover:hover {
+        visibility: hidden;
+      }
+      div {
+        margin: calc(50vh - 5vw) auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>건의 사항을 적어 주세요</h3>
+    <label for="textarea">
+      <textarea
+        id="textarea"
+        cols="30"
+        rows="10"
+        placeholder="건의 사항"
+      ></textarea>
+    </label>
+    <br />
+
+    <input
+      type="checkbox"
+      name="input-checkbox"
+      id="text1"
+      style="color: red"
+    />
+    <label for="text1" style="background-color: red">빨강</label>
+    <input type="checkbox" name="input-checkbox" id="text2" />
+    <label for="text2" style="background-color: blue">파란</label>
+    <input type="checkbox" name="input-checkbox" id="text3" />
+    <label for="text3" style="background-color: yellow">노랑</label>
+    <button type="submit" style="padding-left: 10px">제출</button>
+
+    <br />
+    <br />
+
+    <p class="solid">A solid border.</p>
+    <p class="dotted">A dotted border.</p>
+    <p class="dotted1">A dotted different color border.</p>
+    <p class="inset">An inset border.</p>
+    <br />
+    <div style="background-color: bisque; width: 400px; height: 400px">
+      <div
+        style="background-color: brown; width: 100; height: 100; color: white"
+        id="Sesac"
+      >
+        SeSac
+      </div>
+    </div>
+    <br />
+    <div
+      style="background-color: blue; width: 200px; height: 200px"
+      id="hover"
+    ></div>
+  </body>
+</html>

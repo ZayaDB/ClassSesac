@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background</title>
+    <!-- graduation section-->
+    <style>
+      div {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 30px;
+      }
+      .grad-1 {
+        background: linear-gradient(grey, tomato);
+      }
+      .grad-2 {
+        background: linear-gradient(90deg, grey, tomato);
+      }
+      .grad-3 {
+        background: linear-gradient(90deg, grey, 75%, tomato);
+      }
+      .grad-4 {
+        background: linear-gradient(grey, tomato, gold);
+      }
+    </style>
+    <link rel="stylesheet" href="./0214.css" />
+  </head>
+  <body>
+    <div class="grad-1"></div>
+    <div class="grad-2"></div>
+    <div class="grad-3"></div>
+    <div class="grad-4"></div>
+    <br />
+    <hr />
+    <br />
+    <div class="background box"></div>
+    <div class="background-image box"></div>
+    <br />
+    <hr />
+    <div class="sky1" style="width: 800px; height: 500px"></div>
+    <div class="sky2" style="width: 800px; height: 500px"></div>
+    <div class="sky3" style="width: 800px; height: 500px"></div>
+
+    <hr />
+    <br />
+    <input class="search" type="text" placeholder="검색" />
+    <hr />
+    <br />
+    <h2>position(static, absolute, fixed, relative)</h2>
+
+    <div class="position-static">static</div>
+    <div class="position-relative">relative</div>
+    <div class="sticky-container">
+      <div class="position-sticky">sticky</div>
+    </div>
+    <div class="position-absolute">absolute</div>
+    <div class="position-fixed">fixed</div>
+
+    <hr />
+    <br />
+
+    <div class="container">
+      container
+      <div class="item1">item 1</div>
+      <div class="item2">item 2</div>
+      <div class="item3">item 3</div>
+    </div>
+
+    <hr />
+    <br />
+    <br />
+    <br />
+    <main>
+      <section class="product-info">section 1</section>
+      <section class="product-info-detail">
+        <div class="fixed-tab">
+          <ul>
+            <li><a href="#">상품정보</a></li>
+            <li><a href="#">혜택/구매정보</a></li>
+            <li><a href="#">고객리뷰/Q&A</a></li>
+            <li><a href="#">추천 상품</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <a href="#" class="top-btn">위로</a>
+  </body>
+</html>

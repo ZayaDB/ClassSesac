@@ -1,0 +1,67 @@
+* {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+  margin-bottom: 60px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #ddd;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+/* TODO: header1 ~ 3까지 완성해주세요! */
+
+/* header1 */
+.header1 .menus {
+  display: flex;
+  align-items: center;
+}
+.header1 .menus li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 20px;
+}
+
+/* header2 */
+.header2 .menus {
+  /* height 100%를 주는 이유
+    >> ul의 높이는 콘텐츠의 크기만큼 할당되어 있기 때문에
+    처음의 height는 li 와 ul가 같습니다. 
+    
+    하지만 li들은 .header2 기준으로 세로 중앙정렬을 해야하기 때문에
+    ul.menus는 .header2의 높이를 그대로 가져와서 li의 기준이 되어야 합니다.
+    
+    border:1px solid black; 으로 ul.menus가 어느정도를 차지하는지 확인해보고
+    height:100%가 있을 때와 없을 때를 비교해보세요!
+    */
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header3 */
+.header3 ul {
+  display: flex;
+}

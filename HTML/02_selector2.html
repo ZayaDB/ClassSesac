@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css 복합 선택자</title>
+    <style>
+      header {
+        height: 70px;
+        background-color: aliceblue;
+      }
+      section {
+        border: 5px solid pink;
+      }
+      article {
+        border: 5px solid rebeccapurple;
+      }
+      header > h1 {
+        color: violet;
+        text-align: center;
+      }
+      /*자식 선택자*/
+      h1 {
+        background-color: cadetblue;
+      }
+      .second > h2 {
+        background-color: midnightblue;
+        color: white;
+      }
+      main > .first > article > ul > li {
+        font-size: 16px;
+      }
+      .second li {
+        font-size: 50px;
+        background-color: tomato;
+        color: white;
+      }
+      #sunandmoons + li {
+        font-size: 30px;
+      }
+      #snowWhite ~ li {
+        background-color: sandybrown;
+      }
+      section.second {
+        background-color: yellow;
+      }
+      main section.second ul > li > ul > li,
+      .first article span {
+        border: 5px dotted red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>복합 선택자 연습</h1>
+    </header>
+    <main style="margin: auto">
+      <section class="first">
+        <h2>첫번째 section</h2>
+        <article>
+          <span> 전래동화 </span>
+          <ul>
+            <li>콩쥐팥쥐</li>
+            <li id="sunandmoons">햇님 달님</li>
+            <li>흥부와 놀부</li>
+            <li>은혜갚은 까치</li>
+          </ul>
+        </article>
+      </section>
+      <section class="second">
+        <h2>두번째 section</h2>
+        <article>
+          <span>외국 동화</span>
+          <ul>
+            <li>신데렐라</li>
+            <li>미녀와 야수</li>
+            <li id="snowWhite">백설 공주</li>
+            <li>알라딘</li>
+            <li>이상한 나라의 엘리스</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

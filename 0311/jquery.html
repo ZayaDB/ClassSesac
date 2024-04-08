@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery 실습</title>
+    <!--https://releases.jquery.com/ library-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./jquery.js"></script>
+    <style>
+      .container {
+        width: 100vw;
+        height: 400px;
+        background-color: antiquewhite;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+      .red {
+        background-color: red;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .orange {
+        background-color: orange;
+      }
+      .text {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="testSelector">jquery 선택자</div>
+    <input type="text" />
+    <button onclick="useVal()">val()사용하기</button>
+    <button onclick="useAttr()">Attr()사용하기</button>
+    <br />
+    <span id="span"
+      >hello
+      <p>world</p></span
+    >
+    <button onclick="useText()">Text()사용하기</button>
+    <button onclick="useHTML()">HTML()사용하기</button>
+    <button onclick="useCss()">Css()사용하기</button>
+    <br />
+    <hr />
+    <div class="container">
+      <div class="box red" id="red"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box red"></div>
+    </div>
+    <button onclick="useAppen()">요소 추가하기() 메서드 사용하기</button>
+    <button onclick="useRemove()">요소 삭제하기() 메서드 사용하기</button>
+    <button onclick="useParent()">요소 탐색하기() 메서드 사용하기</button>
+    <div class="box text" id="controlClass">클래스 조작</div>
+    <button onclick="controlClass()">클래스 조작하기</button>
+  </body>
+</html>
