@@ -1,0 +1,21 @@
+div {
+  border: 1px solid black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: beige;
+}
+.container {
+  background-color: aliceblue;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rebeccapurple;
+}
+.item1 {
+  font-weight: bold;
+}

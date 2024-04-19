@@ -1,0 +1,104 @@
+.sass-box {
+  width: 100px;
+  height: 100px;
+  background-color: palevioletred;
+}
+
+// 변수 사용
+// 디자인 시스템 (색상, 글자 크기, 여백 등 미리 정한 디자인 시스템)을
+// 변수에 저장해 사용
+$color-main: #4365a6;
+$boxShadow: 2px 2px 6px gray;
+$mobile: 700px;
+
+.sass-var {
+  background-color: $color-main;
+  box-shadow: $boxShadow;
+}
+
+.sass-var2 {
+  color: $color-main;
+}
+
+@media screen and (max-width: $mobile) {
+  .sass-var2 {
+    background-color: red;
+  }
+}
+
+// 연산
+.sass-calc {
+  // 단위가 같을 떄 calc 필요 없이 연산 가능
+  width: 500px - 80px;
+  height: calc(50vh - 180px);
+  border: 5px solid yellow;
+}
+
+// 중첩
+// .sass-div1 > .sass-div2 > .sass-div3
+.sass-div1 {
+  border: 5px solid pink;
+  padding: 50px;
+
+  .sass-div2 {
+    border: 5px solid skyblue;
+    padding: 10px;
+
+    .sass-div3 {
+      background-color: burlywood;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &:hover {
+    border: 5px solid red;
+  }
+}
+
+// 믹스인
+// scss에서 사용하는 함수
+@mixin bold-border() {
+  border: 10px solid black;
+}
+
+// 매개변수를 받아 재사용성을 높임
+@mixin add-border($borderWidth, $bordercolor) {
+  border: $borderWidth $bordercolor solid;
+}
+
+// 매개변수에 기본값 지정
+@mixin add-border2($borderWidth: 5px, $bordercolor: yellow) {
+  border: $borderWidth $bordercolor solid;
+}
+
+@mixin default-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sass-mixin {
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+  // border: 10px solid black;
+  // @include bold-border();
+  // @include add-border(8px, green);
+  // @include add-border2(15px);
+
+  // 협업 시에는 해당 mixin이 어떤 스타일링이 되는지 작성해주는 것이 좋음
+  @include add-border2($bordercolor: yellow, $borderWidth: 15px);
+}
+
+// 확장
+.sass-btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.sass-btn-extends {
+  @extend .sass-btn;
+  background-color: tomato;
+}
